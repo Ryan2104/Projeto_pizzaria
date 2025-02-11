@@ -1,0 +1,23 @@
+
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-image:url(https://www.lacentral.com.br/wp-content/uploads/2023/07/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai-scaled.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin:0;
+	padding: 0;
+	 }
+.top{
+height: 10vh;
+	 }
+	 
+form{
+
+	margin-left:8vw;
+
+}
+
+

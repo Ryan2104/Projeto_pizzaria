@@ -1,0 +1,57 @@
+<style>
+	*{margin:0;overflow:hidden;}
+.fundo{
+	position: absolute;
+	z-index: 99;	
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.7;
+	display: block;
+	overflow: hidden;
+}
+#modal{
+	z-index: 99;
+	width: 40vw;
+	margin-left:30vw;
+	margin-top:20vh;
+	border-radius:1vw;
+	border:1px solid black;
+	display:block;
+	position:absolute;
+	padding: 10px;
+	background-color: white;
+}
+#modal h1{
+	margin-top:0px;
+	text-align: center;
+}
+#modal span{
+	float:right;
+	padding:10px;
+	background-color:gray;
+	color:white;
+	border-radius:100%;
+	font-size:10px;
+	cursor:pointer;
+}
+#modal button{	
+	width: 5vw;	
+	margin-left: 17.5vw;
+}
+</style>
+<script>
+	function fechar(){
+		let fundo = document.querySelector(".fundo");
+		let modal = document.querySelector("#modal");
+		fundo.style.display = "none";
+		modal.style.display = "none";
+	}
+</script>
+<div class="fundo"></div>
+<div id="modal">
+<h1>'.$msg.'</h1>
+<button class="btn btn-primary" onclick="fechar()">Ok</button>
+</div>
+
+
